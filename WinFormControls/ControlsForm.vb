@@ -19,6 +19,7 @@
     End Sub
 
     Private Sub AboutTopMenuItem_Click_1(sender As Object, e As EventArgs) Handles AboutTopMenuItem.Click
-
+        AboutForm.Show()
+        Me.Hide()
     End Sub
 End Class

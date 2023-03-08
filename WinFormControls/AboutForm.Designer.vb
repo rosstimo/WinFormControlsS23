@@ -22,9 +22,41 @@ Partial Class AboutForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.OKButton = New System.Windows.Forms.Button()
+        Me.AboutLabel = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'OKButton
+        '
+        Me.OKButton.Location = New System.Drawing.Point(409, 281)
+        Me.OKButton.Name = "OKButton"
+        Me.OKButton.Size = New System.Drawing.Size(149, 76)
+        Me.OKButton.TabIndex = 0
+        Me.OKButton.Text = "OK"
+        Me.OKButton.UseVisualStyleBackColor = True
+        '
+        'AboutLabel
+        '
+        Me.AboutLabel.Location = New System.Drawing.Point(12, 9)
+        Me.AboutLabel.Name = "AboutLabel"
+        Me.AboutLabel.Size = New System.Drawing.Size(546, 255)
+        Me.AboutLabel.TabIndex = 1
+        Me.AboutLabel.Text = "Label1"
+        '
+        'AboutForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(564, 368)
+        Me.Controls.Add(Me.AboutLabel)
+        Me.Controls.Add(Me.OKButton)
+        Me.Name = "AboutForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AboutForm"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents OKButton As Button
+    Friend WithEvents AboutLabel As Label
 End Class
